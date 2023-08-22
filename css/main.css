@@ -1,0 +1,105 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.8rem;
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+  margin: auto;
+}
+main section {
+  padding: 40px 20px;
+  display: flex;
+  width: 100%;
+  max-width: 370px;
+  height: 350px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 10px;
+  position: relative;
+}
+main section .advice--number {
+  letter-spacing: 5px;
+  color: hsl(150, 100%, 66%);
+  font-size: 1.2rem;
+}
+main section div {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+main section div .advice-description {
+  color: hsl(193, 38%, 86%);
+}
+main section .design {
+  display: block;
+  width: 100%;
+  height: 20px;
+  background-image: url("../images/pattern-divider-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 20px;
+}
+main section .ico-dado {
+  background-color: hsl(150, 100%, 66%);
+  position: absolute;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  height: 60px;
+  bottom: -30px;
+  left: calc(50% - 30px);
+  border-style: none;
+}
+main section .ico-dado .ico {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/icon-dice.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main section .ico-dado:hover {
+  box-shadow: 1px 2px 10px 2px hsl(150, 100%, 66%);
+}
+main section .ico-dado:active {
+  transform: scale(0.9);
+}
+
+@media (min-width: 1440px) {
+  main section {
+    min-width: 350px;
+    max-width: 550px;
+    width: 40%;
+  }
+  main section .design {
+    display: block;
+    width: 100%;
+    height: 20px;
+    background-image: url("../images/pattern-divider-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */
